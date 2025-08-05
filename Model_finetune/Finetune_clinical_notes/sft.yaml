@@ -1,1 +1,31 @@
+task: llm
+base_model: /home/jupyter/20000360102458359xu/LingfeiQian/saved_models/${MODEL_NAME} # path for the LLM
+project_name: meditron7bmedmcqafinetunedda101e05
+log: tensorboard
+backend: local-cli
 
+data:
+  path: /home/jupyter/20000360102458359xu/LingfeiQian/saved_dataset/${DATASET} # path for the finetuning dataset
+  train_split: train
+  valid_split: null
+  chat_template: chatml
+  column_mapping:
+    text_column: conversations
+
+params:
+  block_size: 4096
+  model_max_length: 4096
+  epochs: 10
+  batch_size: 1
+  lr: 1e-05
+  peft: true
+  lora_r: 64
+  lora_alpha: 128
+  lora_dropout: 0 
+  quantization: int4
+  target_modules: all-linear
+  padding: right
+  optimizer: adamw_torch
+  scheduler: cosine
+  gradient_accumulation: 4
+  mixed_precision: bf16
