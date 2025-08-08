@@ -54,7 +54,8 @@ We use two main strategies for sampling the text data:
    - This script chooses a random position within each document to begin sampling. 
 
 ## Model Finetune
-For model finetune, please refer to [finetune.py](Model_finetune/finetune.py)
+For model finetune, we include model fine-tuning over both benchmarks and clinical notes. 
+Please refer to [Model_finetune/Finetune_benchmark] (Model_finetune/Finetune_benchmark) and [Model_finetune/Finetune_clinical_notes](Model_finetune/Finetune_clinical_notes). 
 
 ## Model Inference
 We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For details, please refer to [vllm_inference.py](./Meditron/vllm_inference.py).
@@ -89,3 +90,4 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
