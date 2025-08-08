@@ -1,5 +1,5 @@
-# Data Memorization of Medical LLMs
-This repository investigate the problem of privacy and memorization in large language models (LLMs).
+# Data Memorization of LLMs in Medicine
+This repository provides the related codes, datasets, and models for studying memorization of large language models in medicine.
 
 ## Install Meditron Environment
 To set up the environment, follow the steps below:
@@ -9,7 +9,7 @@ conda activate meditron
 pip install -r requirements.txt
 ```
 
-## Originial datasets
+## Original datasets
 ### Meditron Pre-train Datasets 
 The following datasets are used for Meditron pre-training: 
 - Clinical Guidelines
@@ -87,4 +87,5 @@ The partial memorization function measures how closely a model's output matches 
 
 
 ## License
+
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
