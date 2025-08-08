@@ -1,11 +1,11 @@
 task: llm
-base_model: /home/jupyter/20000360102458359xu/LingfeiQian/saved_models/${MODEL_NAME} # path for the LLM
+base_model: /XXX (replace with your path)/${MODEL_NAME} # path for the LLM
 project_name: meditron7bmedmcqafinetunedda101e05
 log: tensorboard
 backend: local-cli
 
 data:
-  path: /home/jupyter/20000360102458359xu/LingfeiQian/saved_dataset/${DATASET} # path for the finetuning dataset
+  path: /XXX (replace with your path)/${DATASET} # path for the finetuning dataset
   train_split: train
   valid_split: null
   chat_template: chatml
