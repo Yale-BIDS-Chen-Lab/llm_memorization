@@ -21,8 +21,8 @@ You can find these datasets in the [gap-replay directory](https://github.com/epf
 
 ### PMCLLaMA Datasets
 For PMCLLaMa, the following datasets are available:
-- [pre-trained dataset](./PMCLLama/readme.md). We provide the source and a detailed procedure for processing the pre-trained datasets.
-- [fine-tuning dataset](https://huggingface.co/datasets/axiong/pmc_llama_instructions).
+- [Pre-training datasets](./PMCLLama/readme.md). We provide the detailed procedure for acquiring and processing pre-training datasets.
+- [Fine-tuning datasets](https://huggingface.co/datasets/axiong/pmc_llama_instructions). You can find these datasets through this [link](https://huggingface.co/datasets/axiong/pmc_llama_instructions). 
 
 ## Pre-processed datasets
 We provide multiple links to pre-processed versions datasets for convenience (Due to copyright restrictions, only PMC IDs for the original dataset are available.):
@@ -91,6 +91,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
