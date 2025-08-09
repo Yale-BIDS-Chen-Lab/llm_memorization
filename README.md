@@ -21,7 +21,17 @@ You can find these datasets in the [gap-replay directory](https://github.com/epf
 
 ### PMCLLaMA Datasets
 For PMCLLaMa, the following datasets are available:
-- Pre-training datasets. We provide the detailed procedure for acquiring and processing [pre-training datasets](./PMCLLama/readme.md).
+- Pre-training datasets. The model used for pretraining is from this [link](https://huggingface.co/chaoyi-wu/PMC_LLAMA_7B).
+To obtain the PMC open source articles we firstly need to download the csv file that include all the PMCid of the articles. 
+```
+wget ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_file_list.csv
+```
+Then we randomly select select the size PMCid and extract setences from the abstract and body using the pmc_extract_articles.py
+```
+python pmc_extract_articles.py --csv_path ./oa_file_list.csv --download_dir ./downloads --extract_dir ./extracted_articles --num_samples 11000 --random_seed 42 --word_limit 2000 --intermediate_json ./pmc_intermediate.json
+```
+This command downloads and processes 11,000 sample articles, saves to the ./downloads directory, extracts them to the ./extracted_articles directory, and stores the extracted text content in the ./pmc_intermediate.json file.
+
 - Fine-tuning datasets. You can find these datasets through this [link](https://huggingface.co/datasets/axiong/pmc_llama_instructions). 
 
 ## Dataset Processing
@@ -70,6 +80,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
