@@ -62,12 +62,13 @@ We also include first-K tokens comparison
     - Evaluates the similarity between model output and GT for the first K tokens.
 
 ### Partial memorization metric
-The partial memorization function measures how closely a model's output matches the groundtruth at the token level within the first 100 tokens, focusing on exact matches at corresponding positions. Please refer to [partial_memorization_eval](./partial_memorization_eval.py).
+The partial memorization function measures how closely a model's output matches the groundtruth at the token level within the first 100 tokens, focusing on exact matches at corresponding positions. Please refer to [partial_memorization_eval](./eval/partial_eval.py).
 
 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
