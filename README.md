@@ -56,9 +56,7 @@ After performing model inference, the generated responses are stored in a respon
 3. BLEU Score
 4. BERTScore
 5. BARTScore
-
-
-### Valid Length Evaluation
+   
 We also include first-K tokens comparison 
     - Script: [eval_valid_all.py](./eval/valid_length_eval/eval_valid_all.py)
     - Evaluates the similarity between model output and GT for the first K tokens.
@@ -70,6 +68,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
