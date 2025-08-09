@@ -1,5 +1,5 @@
 ### BERT and BART evalution metric
-To evaluate using BERTScore and BARTScore, you will need to follow the commands below:
+To evaluate using BERTScore and BARTScore, you need to follow the commands below:
 1. Make a package
 ```
 touch __init__.py
