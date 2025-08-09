@@ -59,15 +59,9 @@ After performing model inference, the generated responses are stored in a respon
 
 
 ### Valid Length Evaluation
-We add two kinds of evaluation here: evaluating first-K tokens and first-K sentences.
-
-1. First-K tokens comparison
+We also include first-K tokens comparison 
     - Script: [eval_valid_all.py](./eval/valid_length_eval/eval_valid_all.py)
     - Evaluates the similarity between model output and GT for the first K tokens.
-
-2. Specified tokens comparison
-    - Script: [eval_valid_firstsen.py](./eval/valid_sent_eval/eval_valid_firstsen.py)
-    - Evaluates the similarity for the first K sentences of the text.
 
 ### Partial memorization metric
 The partial memorization function measures how closely a model's output matches the groundtruth at the token level within the first 100 tokens, focusing on exact matches at corresponding positions. Please refer to [partial_memorization_eval](./partial_memorization_eval.py).
@@ -76,6 +70,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
