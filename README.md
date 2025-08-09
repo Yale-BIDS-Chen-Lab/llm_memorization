@@ -26,9 +26,12 @@ For PMCLLaMa, the following datasets are available:
 
 ## Dataset Processing
 We split each instance into two parts, let the first part  (top-𝑙 tokens) be the input and the second part be the groundtruth. 
-Please refer to 
-use two main strategies for sampling the text data:
-   - Script: [guidelines_process_token.py](./Meditron/guidelines_process_token.py)
+Please refer to [Data_preprocess]. 
+- For example, for the clinical guidelines dataset, run:
+```
+python guidelines_process_token.py --sample_size 4000 --input_length 50 --output_length 500 --seed 42 --output_file dataset/4k_sample_50.json
+```
+This generates a 4,000 sampled instances `4k_sample_50.json.json`. The `sample_size` denotes total training samples, `input_length` and `output_length` denote the input length and the output length.
 
 ## Model Finetune
 For model finetune, we include model fine-tuning over both benchmarks and clinical notes. 
@@ -67,6 +70,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
