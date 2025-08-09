@@ -1,6 +1,6 @@
 ## Dataset preprocess
+Split each instance into two parts and let the first part  (top-𝑙 tokens) be the input and the second part be the groundtruth.
 
-### Sequential sampling from the first word
 - To process the clinical guidelines dataset, run:
 ```
 python guidelines_process_token.py --sample_size 4000 --input_length 50 --output_length 500 --seed 42 --output_file dataset/4k_sample_50.json
