@@ -65,7 +65,7 @@ We add two kinds of evaluation here: evaluating first-K tokens and first-K sente
     - Script: [eval_valid_all.py](./eval/valid_length_eval/eval_valid_all.py)
     - Evaluates the similarity between model output and GT for the first K tokens.
 
-2. First-K sentences comparison
+2. Specified tokens comparison
     - Script: [eval_valid_firstsen.py](./eval/valid_sent_eval/eval_valid_firstsen.py)
     - Evaluates the similarity for the first K sentences of the text.
 
@@ -76,6 +76,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
