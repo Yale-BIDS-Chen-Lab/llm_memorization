@@ -49,9 +49,6 @@ Please refer to [Model_finetune/Finetune_benchmark/](Model_finetune/Finetune_ben
 ## Model Inference
 We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For example, to perform inference of the fine-tuned PMCLLaMA model, please refer to [./Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py](./Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py).
 
-## Evaluation results:
-Detailed evaluation results for all experiments can be found in this [Google spreadsheet](https://docs.google.com/spreadsheets/d/1cbOuZKMctm0PAj3LCwNYm2mJBz-tFvfkHrGIHNxxGow/edit?usp=sharing).
-
 ## Evaluation metrics:
 After running model inference, the generated responses are stored in a dedicated response folder. We then apply various evaluation metrics using the script [eval_all.py](./eval/full_eval/eval_all.py), which includes:
 1. Top-n Consecutive Token Match
@@ -79,6 +76,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
