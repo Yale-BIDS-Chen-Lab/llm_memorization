@@ -24,35 +24,11 @@ For PMCLLaMa, the following datasets are available:
 - Pre-training datasets. We provide the detailed procedure for acquiring and processing [pre-training datasets](./PMCLLama/readme.md).
 - Fine-tuning datasets. You can find these datasets through this [link](https://huggingface.co/datasets/axiong/pmc_llama_instructions). 
 
-## Pre-processed datasets
-We provide multiple links to pre-processed versions datasets for convenience (Due to copyright restrictions, only PMC IDs for the original dataset are available.):
-
-### Meditron
-
-1. Initial pre-processed datasets: [Access here](https://yaleedu-my.sharepoint.com/:f:/r/personal/anran_li_yale_edu/Documents/Medical%20LLMs%20Memorization/Experiment%20results/Pre-train/Meditron_initial_datasets?csf=1&web=1&e=a90VvS)
-
-2. Processed datasets: [Access here](https://yaleedu-my.sharepoint.com/:f:/r/personal/anran_li_yale_edu/Documents/Medical%20LLMs%20Memorization/Experiment%20results/Pre-train/Meditron_split_dataset?csf=1&web=1&e=cxprDj)
-
-3. Fine-tuned Sampled Datasets [Access here](https://yaleedu-my.sharepoint.com/:f:/r/personal/anran_li_yale_edu/Documents/Medical%20LLMs%20Memorization/Experiment%20results/Fine-tune/sampled_dataset?csf=1&web=1&e=lpQklH)
-
-
-### PMCLLaMA
-
-1. Initial pre-processed datasets: [Access here](https://yaleedu-my.sharepoint.com/:f:/r/personal/anran_li_yale_edu/Documents/Medical%20LLMs%20Memorization/Experiment%20results/Pre-train/PMCLLama_initial_datasets?csf=1&web=1&e=ydTvQA)
-
-2. Prcessed fine-tuned datasets: [Access here](https://yaleedu-my.sharepoint.com/:f:/r/personal/anran_li_yale_edu/Documents/Medical%20LLMs%20Memorization/Experiment%20results/Fine-tune/sampled_dataset/PMCLLaMA_finetuned_dataset?csf=1&web=1&e=vpR1FJ)
-
-3. Processed pre-trained datasets: [Access here](https://yaleedu-my.sharepoint.com/:f:/r/personal/anran_li_yale_edu/Documents/Medical%20LLMs%20Memorization/Experiment%20results/Pre-train/PMCLLaMA_split_dataset?csf=1&web=1&e=dplsms)
-
 ## Dataset Processing
-We use two main strategies for sampling the text data:
-1. Sequential Sampling from the First Word
+We split each instance into two parts, let the first part  (top-𝑙 tokens) be the input and the second part be the groundtruth. 
+Please refer to 
+use two main strategies for sampling the text data:
    - Script: [guidelines_process_token.py](./Meditron/guidelines_process_token.py)
-   - This script processes data starting from the very beginning of each document.
-
-2. Sequential Sampling from a Random Starting Point
-   - Script: [random_dataset.py](./Meditron/random_dataset.py)
-   - This script chooses a random position within each document to begin sampling. 
 
 ## Model Finetune
 For model finetune, we include model fine-tuning over both benchmarks and clinical notes. 
@@ -91,6 +67,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
