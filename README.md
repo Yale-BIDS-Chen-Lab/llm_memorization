@@ -35,8 +35,7 @@ This command downloads and processes 11,000 sample articles, saves to the ./down
 - Fine-tuning datasets. You can find these datasets through this [link](https://huggingface.co/datasets/axiong/pmc_llama_instructions). 
 
 ## Dataset Processing
-We split each instance into two parts, let the first part  (top-𝑙 tokens) be the input and the second part be the groundtruth. 
-Please refer to [Data_preprocess]. 
+We split each instance into two parts, let the first part  (top-𝑙 tokens) be the input and the second part be the groundtruth.  
 - For example, for the clinical guidelines dataset, run:
 ```
 python guidelines_process_token.py --sample_size 4000 --input_length 50 --output_length 500 --seed 42 --output_file dataset/4k_sample_50.json
@@ -45,7 +44,7 @@ This generates a 4,000 sampled instances `4k_sample_50.json.json`. The `sample_s
 
 ## Model Finetune
 For model finetune, we include model fine-tuning over both benchmarks and clinical notes. 
-Please refer to [Model_finetune/Finetune_benchmark/finetune.py](Model_finetune/Finetune_benchmark/finetune.py) and [Model_finetune/Finetune_clinical_notes/run.sh](Model_finetune/Finetune_clinical_notes/run.sh). 
+Please refer to [Model_finetune/Finetune_benchmark/](Model_finetune/Finetune_benchmark/) and [Model_finetune/Finetune_clinical_notes/](Model_finetune/Finetune_clinical_notes/). 
 
 ## Model Inference
 We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For details, please refer to [vllm_inference.py](./Meditron/vllm_inference.py).
@@ -80,6 +79,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
