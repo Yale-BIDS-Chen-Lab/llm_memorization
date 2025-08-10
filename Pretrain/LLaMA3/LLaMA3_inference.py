@@ -13,7 +13,7 @@ else:
 
 
 llm = LLM(
-    model="YBXL/Med-LLaMA3-8B", 
+    model="meta-llama/Meta-Llama-3-8B", 
     # tensor_parallel_size=2,
     dtype="bfloat16",
     gpu_memory_utilization=0.8,
