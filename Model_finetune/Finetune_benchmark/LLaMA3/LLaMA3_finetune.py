@@ -13,7 +13,7 @@ import os
 
 token = '/xx' # replace with your tokens
 output_dir = "/xx" # replace with your directory
-model_name = "YBXL/Med-LLaMA3-8B"
+model_name = "meta-llama/Meta-Llama-3-8B"
 os.environ["WANDB_PROJECT"] = output_dir.split('/')[-1]
 
 # local_rank = int(os.getenv("LOCAL_RANK", 0))
