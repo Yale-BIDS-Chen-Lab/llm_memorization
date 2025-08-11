@@ -45,6 +45,8 @@ This generates a 4,000 sampled instances `4k_sample_50.json.json`. The `sample_s
 ## Model Finetune
 For model finetune, we include model fine-tuning over both benchmarks and clinical notes. 
 Please refer to [Model_finetune/Finetune_benchmark/](Model_finetune/Finetune_benchmark/) and [Model_finetune/Finetune_clinical_notes/](Model_finetune/Finetune_clinical_notes/). 
+The fine-tuned models are released at [YBXL/pmcllama13b_unified](https://huggingface.co/YBXL/pmcllama13b_unified). 
+
 
 ## Model Inference
 We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For example, to perform inference of the fine-tuned PMCLLaMA model, please refer to [Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py](./Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py).
@@ -68,6 +70,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
