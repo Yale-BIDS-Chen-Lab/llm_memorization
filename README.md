@@ -46,7 +46,7 @@ This generates a 4,000 sampled instances `4k_sample_50.json.json`. The `sample_s
 For model finetune, we include model fine-tuning over both benchmarks and clinical notes. 
 Please refer to [Model_finetune/Finetune_benchmark/](Model_finetune/Finetune_benchmark/) and [Model_finetune/Finetune_clinical_notes/](Model_finetune/Finetune_clinical_notes/). 
 
-The fine-tuned models are released at YBXL. For example, [YBXL/finetuned_pmcllama7b](https://huggingface.co/YBXL/pmcllama7b_unified), [YBXL/finetuned_pmcllama13b](https://huggingface.co/YBXL/pmcllama13b_unified) and [YBXL/finetuned_meditron7b](https://huggingface.co/YBXL/meditron7b_combined_10epoch). 
+The fine-tuned models are released at [YBXL](https://huggingface.co/YBXL). For example, [YBXL/finetuned_pmcllama7b](https://huggingface.co/YBXL/pmcllama7b_unified), [YBXL/finetuned_pmcllama13b](https://huggingface.co/YBXL/pmcllama13b_unified) and [YBXL/finetuned_meditron7b](https://huggingface.co/YBXL/meditron7b_combined_10epoch). 
 
 
 ## Model Inference
@@ -71,6 +71,7 @@ The partial memorization function measures how closely a model's output matches 
 ## License
 
 This repository is provided under the [MIT License](./LICENSE) (or whichever license applies). Please refer to the `LICENSE` file for details.
+
 
 
 
