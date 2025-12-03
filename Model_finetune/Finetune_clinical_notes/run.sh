@@ -1,3 +1,3 @@
 #! bin/bash
 
-autotrain --config filled_sft.yml
+autotrain --config sft.yml
