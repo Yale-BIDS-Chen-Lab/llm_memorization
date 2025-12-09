@@ -17,6 +17,10 @@ params:
 
   block_size: 2048
   model_max_length: 2048
+  early_stopping: true
+  early_stopping_patience: 3 
+  early_stopping_threshold: 0.0 
+  metric: "eval_loss" 
 
   epochs: 10
   batch_size: 16
