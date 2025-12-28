@@ -24,7 +24,7 @@ def load_model(model_path):
     try:
         tokenizer = AutoTokenizer.from_pretrained(
             model_path,
-            cache_dir='/gpfs/radev/home/yf329/scratch/hf_models',
+            cache_dir='xx',
             trust_remote_code=True
         )
         # Check if tokenizer loaded correctly
@@ -34,7 +34,7 @@ def load_model(model_path):
         print(f"AutoTokenizer failed ({e}), trying LlamaTokenizer...")
         tokenizer = LlamaTokenizer.from_pretrained(
             model_path,
-            cache_dir='/gpfs/radev/home/yf329/scratch/hf_models',
+            cache_dir='xx',
             trust_remote_code=True
         )
     
@@ -47,7 +47,7 @@ def load_model(model_path):
         model_path,
         torch_dtype=torch.bfloat16,
         device_map="auto",
-        cache_dir='/gpfs/radev/home/yf329/scratch/hf_models',
+        cache_dir='xx',
         trust_remote_code=True
     )
     model.eval()
