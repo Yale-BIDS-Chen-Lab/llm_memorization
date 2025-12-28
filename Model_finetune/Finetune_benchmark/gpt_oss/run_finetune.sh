@@ -53,7 +53,7 @@ echo "Base model: $MODEL_PATH"
 echo "Output: $OUTPUT_DIR"
 echo "============================================"
 
-python xx/gpt_oss_finetune.py \
+python Model_finetune/Finetune_benchmark/gpt_oss/gpt_oss_finetune.py \
     --model_path "$MODEL_PATH" \
     --output_dir "$OUTPUT_DIR" \
     --num_epochs $NUM_EPOCHS \
