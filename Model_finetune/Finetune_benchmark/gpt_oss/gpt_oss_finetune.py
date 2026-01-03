@@ -241,7 +241,7 @@ if __name__ == "__main__":
                         help="Batch size per device")
     parser.add_argument("--gradient_accumulation_steps", type=int, default=1,
                         help="Gradient accumulation steps")
-    parser.add_argument("--learning_rate", type=float, default=1e-5,
+    parser.add_argument("--learning_rate", type=float, default=2e-5,
                         help="Learning rate")
     parser.add_argument("--max_seq_length", type=int, default=512,
                         help="Maximum sequence length")
