@@ -26,7 +26,7 @@ def perform_inference_batch(input_texts, tokenizer, model, max_input_length=1024
     
     return generated_texts
 
-def main(input_file, output_file, batch_size=8):
+def main(input_file, output_file, batch_size=16):
     # Fixed parameters
     model_name = "axiong/PMC_LLaMA_13B"
     max_input_length = 1024
