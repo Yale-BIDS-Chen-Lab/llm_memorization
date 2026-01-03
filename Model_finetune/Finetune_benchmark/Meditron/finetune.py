@@ -66,7 +66,7 @@ def formatting_prompts_func(example):
 
 # Parameters for training arguments details => https://github.com/huggingface/transformers/blob/main/src/transformers/training_args.py#L158
 training_args = TrainingArguments(
-    per_device_train_batch_size=1,
+    per_device_train_batch_size=16,
     gradient_accumulation_steps=1,
     gradient_checkpointing = True,
     max_grad_norm= 0.3,
