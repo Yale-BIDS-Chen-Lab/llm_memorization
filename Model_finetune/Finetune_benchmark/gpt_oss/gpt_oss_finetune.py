@@ -191,7 +191,7 @@ def main(args):
         logging_steps=10,
         optim="paged_adamw_32bit",
         lr_scheduler_type="cosine",
-        weight_decay=0.00001,
+        weight_decay=0.1,
         warmup_ratio=0.01,
         ddp_find_unused_parameters=False,
         report_to="wandb" if args.use_wandb else "none",
@@ -231,7 +231,7 @@ if __name__ == "__main__":
     parser.add_argument("--output_dir", type=str, required=True,
                         help="Directory to save the fine-tuned model")
     parser.add_argument("--cache_dir", type=str, 
-                        default="/gpfs/radev/home/yf329/scratch/hf_models",
+                        default="xx",
                         help="Cache directory for models")
     
     # Training arguments
@@ -241,7 +241,7 @@ if __name__ == "__main__":
                         help="Batch size per device")
     parser.add_argument("--gradient_accumulation_steps", type=int, default=1,
                         help="Gradient accumulation steps")
-    parser.add_argument("--learning_rate", type=float, default=1e-5,
+    parser.add_argument("--learning_rate", type=float, default=2e-5,
                         help="Learning rate")
     parser.add_argument("--max_seq_length", type=int, default=512,
                         help="Maximum sequence length")
