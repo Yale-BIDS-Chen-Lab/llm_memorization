@@ -33,7 +33,7 @@ params:
   peft: true
   lora_r: 64
   lora_alpha: 128
-  lora_dropout: 0.0
+  lora_dropout: 0.05
   quantization: int4
   target_modules: all-linear
 
