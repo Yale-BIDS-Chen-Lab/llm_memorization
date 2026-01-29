@@ -74,13 +74,16 @@ This repository is provided under the [MIT License](./LICENSE) (or whichever lic
 
 ## Citation
 If this repository is useful for your work, please cite:
-```bibtex
+```
 @article{li2025memorization,
   title={Memorization in Large Language Models in Medicine: Prevalence, Characteristics, and Implications},
-  author={Li, Anran and Qian, Lingfei and Du, Mengmeng and Yin, Yu and Hu, Yan and Sun, Zihao and Fu, Yihang and Kim, Hyunjae and Stutz, Erica and Ai, Xuguang and others},
+  author={Li, Anran and Qian, Lingfei and Du, Mengmeng and Yin, Yu and Hu, Yan and Sun, Zihao and Fu, Yihang and Kim, Hyunjae and Stutz, Erica and Ai, Xuguang, Qianqian Xie, Rui Zhu, Jimin Huang, Yifan Yang, Siru Liu, YihChung Tham, Lucila Ohno-Machado, Hyunghoon Cho, Zhiyong Lu, Hua Xu, Qingyu Chen},
   journal={arXiv preprint arXiv:2509.08604},
   year={2025}
 }
+```
+
+
 
 
 
