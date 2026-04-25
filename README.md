@@ -51,7 +51,7 @@ The fine-tuned models are released at [YBXL](https://huggingface.co/YBXL). For e
 
 
 ## Model Inference
-We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For example, to perform inference of the fine-tuned PMCLLaMA model, please refer to [Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py](./Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py). Inference on `4k_sample_50.json` takes 60 minutes.  
+We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For example, to perform inference of the fine-tuned PMCLLaMA model, please refer to [Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py](./Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py). Inference on `4k_sample_50.json` takes about 60 minutes.  
 
 
 ## Memorization Evaluations:
