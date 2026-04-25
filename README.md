@@ -40,7 +40,7 @@ We split each instance into two parts, let the first part  (top-𝑙 tokens) be 
 ```
 python guidelines_process_token.py --sample_size 4000 --input_length 50 --output_length 500 --seed 42 --output_file dataset/4k_sample_50.json
 ```
-This generates a 4,000 sampled instances `4k_sample_50.json.json`. The `sample_size` denotes total training samples, `input_length` and `output_length` denote the input length and the output length.
+This generates a 4,000 sampled instances `4k_sample_50.json`. The `sample_size` denotes total training samples, `input_length` and `output_length` denote the input length and the output length.
 
 ## Model Finetune
 For model finetune, we include model fine-tuning over both benchmarks and clinical notes. 
@@ -50,7 +50,8 @@ The fine-tuned models are released at [YBXL](https://huggingface.co/YBXL). For e
 
 
 ## Model Inference
-We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For example, to perform inference of the fine-tuned PMCLLaMA model, please refer to [Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py](./Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py).
+We leverage  [vLLM](https://github.com/vllm-project/vllm) to speed up the inference. For example, to perform inference of the fine-tuned PMCLLaMA model, please refer to [Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py](./Model_finetune/Finetune_benchmark/PMCLLaMA/inference_vllm.py). Inference on `4k_sample_50.json` takes 60 minutes.  
+
 
 ## Memorization Evaluations:
 After performing model inference, the generated responses are stored in a response folder. We then apply various evaluation metrics using the script [eval_all.py](./eval/full_eval/eval_all.py), which includes:
