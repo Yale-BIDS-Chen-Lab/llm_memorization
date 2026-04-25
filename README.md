@@ -8,6 +8,7 @@ conda create -n meditron python=3.10
 conda activate meditron
 pip install -r requirements.txt
 ```
+All experiments were conducted on a high-performance computing cluster equipped with 8 × NVIDIA A100 (80GB) GPUs.
 
 ## Original datasets
 ### Meditron Pre-train Datasets 
